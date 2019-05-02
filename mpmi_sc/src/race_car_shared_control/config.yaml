@@ -1,0 +1,5 @@
+user_only_control: true # true or false
+main_joystick: right # right or left
+max_time: 30.0 # in seconds
+inflation_radius: 3.0 # how much to inflate safety barrier
+time_horizon: 25 # prediction horizon

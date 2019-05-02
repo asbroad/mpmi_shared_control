@@ -1,0 +1,15 @@
+float64 x
+float64 y
+float64 angle
+float64 x_dot
+float64 y_dot
+float64 angle_dot
+float64 u_1
+float64 u_2
+float64 u_3
+---
+float64 u_1
+float64 u_2
+float64 u_3
+float64 percent_safe
+float64 cost

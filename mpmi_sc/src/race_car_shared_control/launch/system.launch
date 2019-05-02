@@ -1,0 +1,16 @@
+<launch>
+
+  <!-- parameters -->
+  <rosparam command="load" file="$(find race_car_shared_control)/config.yaml" />
+  <param name="model_path" value="$(find race_car_shared_control)/data/model-sparse.csv" />
+
+  <!-- launch joy node -->
+  <node pkg="joy" type="joy_node" name="joy_node" />
+
+  <!-- launch simulator -->
+  <node name="system" pkg="race_car_shared_control" type="system.py" output="screen" required="true" />
+
+  <!-- launch mpmi controller -->
+  <node name="mpc" pkg="race_car_shared_control" type="shared_control_race_car" output="screen" required="true" />
+
+</launch>
